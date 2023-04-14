@@ -1,4 +1,4 @@
-package com.example.producttest1;
+package com.example.producttest1.response;
 
 import com.google.gson.annotations.SerializedName;
 
@@ -6,7 +6,7 @@ import com.google.gson.annotations.SerializedName;
 public class PostResult {
 
     @SerializedName("product_id")
-    private int id;
+    private String id;
 
     private String title;
     private String price;
@@ -18,7 +18,7 @@ public class PostResult {
     private String created_date;
     private String modified_date;
 
-    public int getId() { return id; }
+    public String getId() { return id; }
 
     public String getTitle() { return title; }
 

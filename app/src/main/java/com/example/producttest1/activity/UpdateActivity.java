@@ -1,4 +1,4 @@
-package com.example.producttest1;
+package com.example.producttest1.activity;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
@@ -8,6 +8,11 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.producttest1.ProductService;
+import com.example.producttest1.R;
+import com.example.producttest1.RetrofitClient;
+import com.example.producttest1.request.UpdateRequest;
 
 import org.json.JSONException;
 import org.json.JSONObject;

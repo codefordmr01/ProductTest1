@@ -1,5 +1,9 @@
 package com.example.producttest1;
 
+import com.example.producttest1.request.ProductRequest;
+import com.example.producttest1.request.UpdateRequest;
+import com.example.producttest1.response.ProductResponse;
+
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.http.Body;
@@ -13,7 +17,7 @@ public interface ProductService {
 
     // 특정 상품 표시
     @GET("product/{id}")
-    Call<ResponseBody> getPost(@Path("id") int id);
+    Call<ResponseBody> getProduct(@Path("id") String id);
 
     // 상품 추가
     @POST("product/post")

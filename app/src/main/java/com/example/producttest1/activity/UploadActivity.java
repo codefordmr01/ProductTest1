@@ -1,4 +1,4 @@
-package com.example.producttest1;
+package com.example.producttest1.activity;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -11,6 +11,12 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.producttest1.request.ProductRequest;
+import com.example.producttest1.response.ProductResponse;
+import com.example.producttest1.ProductService;
+import com.example.producttest1.R;
+import com.example.producttest1.RetrofitClient;
 
 import retrofit2.Call;
 import retrofit2.Callback;

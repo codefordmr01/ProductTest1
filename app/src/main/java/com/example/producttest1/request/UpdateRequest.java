@@ -1,4 +1,4 @@
-package com.example.producttest1;
+package com.example.producttest1.request;
 
 // 상품 수정 Request
 public class UpdateRequest {
