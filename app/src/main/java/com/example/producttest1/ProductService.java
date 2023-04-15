@@ -2,6 +2,7 @@ package com.example.producttest1;
 
 import com.example.producttest1.request.ProductRequest;
 import com.example.producttest1.request.UpdateRequest;
+import com.example.producttest1.response.PostResult;
 import com.example.producttest1.response.ProductResponse;
 
 import okhttp3.ResponseBody;
@@ -17,7 +18,7 @@ public interface ProductService {
 
     // 특정 상품 표시
     @GET("product/{id}")
-    Call<ResponseBody> getProduct(@Path("id") String id);
+    Call<PostResult> getProduct(@Path("id") String id);
 
     // 상품 추가
     @POST("product/post")
